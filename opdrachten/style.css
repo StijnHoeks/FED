@@ -1,0 +1,22 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+header,hgroup,section,footer {
+	display: block;
+	width: 70%;
+	margin: 20px auto 20px auto;
+	font-family: sans-serif;
+}
+article {
+	margin: 20px 0;
+}
+p {
+	margin: 10px 0;
+}
+video {
+	margin-top: 20px;
+}
+footer {
+	text-align: center;
+}
