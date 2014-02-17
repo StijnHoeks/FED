@@ -1,0 +1,93 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	display: block;
+	width: 80%;
+	margin: 0 auto;
+	font-family: sans-serif;
+}
+
+nav li {
+	margin-top: 10px;
+	display: inline-block;
+}
+nav a {
+	text-decoration: none;
+	border: 1px solid #aaa;
+	background-color: #eee;
+	padding: 5px;
+	color: black;
+}
+nav a:hover {
+	background-color: #ddd;
+}
+header,hgroup,section,footer {	
+	margin: 20px auto 20px auto;
+}
+article {
+	margin: 20px 0;
+}
+p {
+	margin: 10px 0;
+}
+video {
+	margin-top: 20px;
+}
+
+
+/* Formulier aanmelden */
+
+fieldset {
+	display: block;
+	margin: 0 auto;
+	background-color: #f9f9f9;
+	margin-bottom: 20px;
+	padding: 20px;
+}
+legend {
+	padding: 0 5px;
+	font-weight: bold;
+	font-size: 18px;
+}
+h3 {
+	margin: 5px 0;
+	font-size: 17px;
+}
+input,label {
+	padding: 1px;
+	margin: 1px;
+}
+
+#form_1 label {
+	display: inline-block;
+	width: 220px;
+}
+#form_1 input {
+	display: inline-block;
+	width: 140px;
+}
+#input_small, #huisnummer {
+	width: 64px !important;
+}
+#form_2 label {
+	display: inline-block;
+	min-width: 200px;
+}
+table {
+	margin: 15px 0 10px 0;
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 10px;
+}
+th {
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+td {
+	width: 60%;
+}
+
+footer {
+	text-align: center;
+}
