@@ -29,8 +29,6 @@
 
     </header>
 
-
-
     <article>
         
         <p>
@@ -46,213 +44,183 @@
             Voor het aanmelden van stageplekken of projecten kunt u onderstaand formulier invullen. Wij nemen zo nodig contact met u op nadat het formulier is verstuurd.
             Voor vragen of opmerkingen kunt u <a href="contact.html">contact</a> met ons op.
         </p>
-        <fieldset id='form_1'>
 
-            <legend>Contactgegevens</legend>
+        <form>
+            <fieldset id='form_1'>
 
-            <label for="naam">Naam *</label>
-            <input type="text" id="naam" placeholder="Voor- en achternaam" autofocus="" required />
-            <br />
+                <legend>Contactgegevens</legend>
 
-            <label for="naam">Bedrijf</label>
-            <input type="text" id="naam" placeholder="Bedrijfsnaam" />
-            <br />
+                <label for="naam">Naam *</label>
+                <input type="text" id="naam" placeholder="Voor- en achternaam" autofocus="" required />
+                <br />
 
-            <label for="adres">Adres *</label>
-            <input type="text" id="adres" required />
-            <br />
+                <label for="naam">Bedrijf</label>
+                <input type="text" id="naam" placeholder="Bedrijfsnaam" />
+                <br />
 
-            <label for="huisnummer">Huisnummer + toevoeging *</label>
-            <input type="number" id="huisnummer" placeholder="0" required />
-            <input type="text" id='input_small' />
-            <br />
+                <label for="adres">Adres *</label>
+                <input type="text" id="adres" required />
+                <br />
 
-            <label for="postcode">Postcode *</label>
-            <input type="text" id="postcode" placeholder="0000 AA" pattern="[1-9][0-9]{3}\s?[a-zA-Z]{2}" required />
-            <br />
+                <label for="huisnummer">Huisnummer + toevoeging *</label>
+                <input type="number" id="huisnummer" placeholder="0" required />
+                <input type="text" id='input_small' />
+                <br />
 
-            <label for="plaats">Plaats *</label>
-            <input type="text" id="plaats" required />
-            <br />
+                <label for="postcode">Postcode *</label>
+                <input type="text" id="postcode" placeholder="0000 AA" pattern="[1-9][0-9]{3}\s?[a-zA-Z]{2}" required />
+                <br />
 
-            <label for="tel">Telefoonnummer *</label>
-            <input type="tel" id="tel" required />
-            <br />
+                <label for="plaats">Plaats *</label>
+                <input type="text" id="plaats" required />
+                <br />
 
-            <label for="email">E-mailadres *</label>
-            <input type="email" id="email" placeholder="example@example.com" required />
-            <br />
+                <label for="tel">Telefoonnummer *</label>
+                <input type="tel" id="tel" required />
+                <br />
 
+                <label for="email">E-mailadres *</label>
+                <input type="email" id="email" placeholder="example@example.com" required />
+                <br />
 
-        </fieldset>
-        <fieldset id='form_2'>
+            </fieldset>
+        </form>
+        <form>
+            <fieldset id='form_2'>
 
+                <legend>Ik wil mij aanmelden</legend>
 
-            <legend>Ik wil mijn aanmelden</legend>
+                <input type="radio" id="aanmelden_project">
+                <label for="aanmelden_project">Voor een project</label>
+                <br />
 
-            <input type="radio" id="aanmelden_project">
-            <label for="aanmelden_project">Voor een project</label>
-            <br />
+                <input type="radio" id="aanmelden_bedrijf">
+                <label for="aanmelden_bedrijf">Als stagebedrijf</label>
+                    
+                    <h2>Project</h2>
 
-            <input type="radio" id="aanmelden_bedrijf">
-            <label for="aanmelden_bedrijf">Als stagebedrijf</label>
+                    <h3>Gegevens</h3>
 
+                    <label for="titel">Titel</label>
+                    <input type="text" id="titel">
+                    <br />
 
-            <table>
-                <tr>
-                    <th>Project</th>
-                    <th>Stage</th>
-                </tr>
-                <tr>
-                    <td>
-                        <h3>Gegevens</h3>
+                    <label for="opdrachtomschrijving">Opdrachtomschrijving</label>
+                    <input type="text" id="opdrachtomschrijving">
+                    <br />
 
-                        <label for="titel">Titel</label>
-                        <input type="text" id="titel">
-                        <br />
+                    <label for="doelgroepomschrijving">Doelgroepomschrijving</label>
+                    <input type="text" id="doelgroepomschrijving">
+                    <br />
 
-                        <label for="opdrachtomschrijving">Opdrachtomschrijving</label>
-                        <input type="text" id="opdrachtomschrijving">
-                        <br />
+                    <label for="doelstelling">Doelstelling</label>
+                    <input type="text" id="doelstelling">
+                    <br />
 
-                        <label for="doelgroepomschrijving">Doelgroepomschrijving</label>
-                        <input type="text" id="doelgroepomschrijving">
-                        <br />
+                    <label for="looptijd">Looptijd</label>
+                    <input type="number" id="looptijd">
+                    <br />
 
-                        <label for="doelstelling">Doelstelling</label>
-                        <input type="text" id="doelstelling">
-                        <br />
+                    <label for="deadline">Deadline</label>
+                    <input type="date" id="deadline">
+                    <br />
+                
+                    <h3>Geschikt voor</h3>
 
-                        <label for="looptijd">Looptijd</label>
-                        <input type="number" id="looptijd">
-                        <br />
+                    <input type="radio" id="tweedejaars">
+                    <label for="tweedejaars">Tweedejaars studenten</label>
+                    <br />
 
-                        <label for="deadline">Deadline</label>
-                        <input type="date" id="deadline">
-                        <br />
-                    </td>
+                    <input type="radio" id="afstudeer">
+                    <label for="afstudeer">Afstudeer studenten</label>
+                    <br />
 
-                    <td>
-                        <h3>Geschikt voor</h3>
+                    <input type="radio" id="onbekend">
+                    <label for="onbekend">Onbekend</label>
+                    <br />
 
-                        <input type="radio" id="tweedejaars">
-                        <label for="tweedejaars">Tweedejaars studenten</label>
-                        <br />
+                    <h2>Stage</h2>
+                
+                    <h3>Geschikt voor</h3>
 
-                        <input type="radio" id="afstudeer">
-                        <label for="afstudeer">Afstudeer studenten</label>
-                        <br />
+                    <input type="radio" id="eerstejaars_student">
+                    <label for="eerstejaars_student">Eerstejaars studenten</label>
+                    <br />
 
-                        <input type="radio" id="onbekend">
-                        <label for="onbekend">Onbekend</label>
-                        <br />
-                    </td>
-                </tr>
+                    <input type="radio" id="tweedejaars_student">
+                    <label for="tweedejaars_student">Tweedejaars studenten</label>
+                    <br />
 
-                <tr>
-                    <td>
-                        <h3>Geschikt voor</h3>
+                    <input type="radio" id="derdejaars_student">
+                    <label for="derdejaars_student">Derdejaars studenten</label>
+                    <br />
 
-                        <input type="radio" id="eerstejaars_student">
-                        <label for="eerstejaars_student">Eerstejaars studenten</label>
-                        <br />
+                    <input type="radio" id="afstudeer_student">
+                    <label for="afstudeer_student">Afstudeer studenten</label>
+                    <br />
 
-                        <input type="radio" id="tweedejaars_student">
-                        <label for="tweedejaars_student">Tweedejaars studenten</label>
-                        <br />
+                    <input type="radio" id="onbekend_student">
+                    <label for="onbekend_student">Onbekend</label>
+                    <br />
+                
+                    <h3>Hoe lang is de stage?</h3>
 
-                        <input type="radio" id="derdejaars_student">
-                        <label for="derdejaars_student">Derdejaars studenten</label>
-                        <br />
+                    <input type="radio" id="10_weken">
+                    <label for="10_weken">10 weken</label>
+                    <br />
 
-                        <input type="radio" id="afstudeer_student">
-                        <label for="afstudeer_student">Afstudeer studenten</label>
-                        <br />
+                    <input type="radio" id="20_weken">
+                    <label for="20_weken">20 weken</label> 
+                    <br /> 
 
-                        <input type="radio" id="onbekend_student">
-                        <label for="onbekend_student">Onbekend</label>
-                        <br />
-                    </td>
+                    <h3>Wanneer begint de stage?</h3>
 
-                    <td>
-                        <h3>Hoe lang is de stage?</h3>
+                    <label for="begin_datum">Begin datum</label>
+                    <input type="date" id="begin_datum">
 
-                        <input type="radio" id="10_weken">
-                        <label for="10_weken">10 weken</label>
-                        <br />
+                
+                    <h3>Beschrijving werkzaamheden</h3>
+                    <label for="beschrijving">Beschrijving stagewerkzaamheden</label>
+                    <textarea id="beschrijving"></textarea>
+                
 
-                        <input type="radio" id="20_weken">
-                        <label for="20_weken">20 weken</label> 
-                        <br /> 
+                    <h3>Beschrijving stagebedrijf</h3>
 
-                        <h3>Wanneer begint de stage?</h3>
+                    <label for "bedrijfsnaam">Bedrijfsnaam *</label>
+                    <input type="text" id="bedrijfsnaam" required>
+                    <br />
 
-                        <label for="begin_datum">Begin datum</label>
-                        <input type="date" id="begin_datum">
+                    <label for="adres_bedrijf">Adres *</label>
+                    <input type="text" id="adres_bedrijf" required />
+                    <br />
 
-                    </td>
-                </tr>
+                    <label for="postcode_bedrijf">Postcode *</label>
+                    <input type="text" id="postcode_bedrijf" placeholder="0000 AA" pattern="[1-9][0-9]{3}\s?[a-zA-Z]{2}" required />
+                    <br />
 
-                <tr>
-                    <td></td>
+                    <label for="plaats_bedrijf">Plaats *</label>
+                    <input type="text" id="plaats_bedrijf" required>
+                    <br />
 
-                    <td>
-                        <h3>Beschrijving werkzaamheden</h3>
-                        <label for="beschrijving">Beschrijving stagewerkzaamheden</label>
-                        <textarea id="beschrijving"></textarea>
-                    </td>
-                </tr>
+                    <label for="sector_bedrijf">Sector</label>
+                    <input type="text" id="sector_bedrijf">
+                    <br />
 
-                <tr>
-                    <td></td>
+                    <label for="core_bedrijf">Core Business</label>
+                    <input type="text" id="core_bedrijf">
+                    <br />       
+                
+                    <label for="opmerking_stage">Opmerkingen</label>
+                    <textarea id="opmerking_stage"></textarea>
+                    <br />
+                
+                    <label for="opmerking_bedrijf">Opmerkingen</label>
+                    <textarea id="opmerking_bedrijf"></textarea>
+                    <br />
 
-                    <td>
-                        <h3>Beschrijving stagebedrijf</h3>
-
-                        <label for "bedrijfsnaam">Bedrijfsnaam *</label>
-                        <input type="text" id="bedrijfsnaam" required>
-                        <br />
-
-                        <label for="adres_bedrijf">Adres *</label>
-                        <input type="text" id="adres_bedrijf" required />
-                        <br />
-
-                        <label for="postcode_bedrijf">Postcode *</label>
-                        <input type="text" id="postcode_bedrijf" placeholder="0000 AA" pattern="[1-9][0-9]{3}\s?[a-zA-Z]{2}" required />
-                        <br />
-
-                        <label for="plaats_bedrijf">Plaats *</label>
-                        <input type="text" id="sector_bedrijf" required>
-                        <br />
-
-                        <label for="sector_bedrijf">Sector</label>
-                        <input type="text" id="sector_bedrijf">
-                        <br />
-
-                        <label for="core_bedrijf">Core Business</label>
-                        <input type="text" id="core_bedrijf">
-                        <br />
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>
-                        <label for="opmerking_stage">Opmerkingen</label>
-                        <textarea id="opmerking_stage"></textarea>
-                        <br />
-                    </td>
-
-                    <td>
-                        <label for="opmerking_bedrijf">Opmerkingen</label>
-                        <textarea id="opmerking_bedrijf"></textarea>
-                        <br />
-                    </td>
-                </tr>
-            </table>
-
-
-            <input type="submit" />
-        </fieldset>
+                <input type="submit" value="Versturen" />
+            </fieldset>
+        </form>
     </article>
 
     <footer>Stijn Hoeks - FED - CMD Hogeschool van Amsterdam</footer>
