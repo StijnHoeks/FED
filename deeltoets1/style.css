@@ -73,22 +73,15 @@ input,label {
 	width: 64px !important;
 }
 
-#form_2 label,#form_3 label {
+#form_2 label {
 	display: inline-block;
 	min-width: 200px;
 }
-table {
-	margin: 15px 0 10px 0;
-	border-bottom: 1px solid #ddd;
-	padding-bottom: 10px;
-}
-#form_2 h2,#form_3 h2 {
+
+#form_2 h2 {
 	border-top: 1px solid #ddd;
 	border-bottom: 1px solid #ddd;
 	margin: 10px 0;
-}
-td {
-	width: 60%;
 }
 
 footer {
