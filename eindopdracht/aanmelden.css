@@ -1,0 +1,14 @@
+article {
+	width: 90%;
+}
+aside {
+	width: 90%;
+}
+article>section:first-of-type {
+	-webkit-column-count: 3;
+	   -moz-column-count: 3;
+			column-count: 3;
+}
+article>section p {
+	padding: 0;
+}

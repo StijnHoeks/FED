@@ -5,6 +5,9 @@
   	-webkit-box-sizing: border-box;
   	box-sizing: border-box; 
 }
+
+NTH-OF-TYPE 
+
 body {
 	display: block;
 	width: 80%;
@@ -16,6 +19,7 @@ body {
 	-moz-box-shadow: 0 0 80px rgb(230,230,230);
 	-ms-box-shadow: 0 0 80px rgb(230,230,230);
 	-o-box-shadow: 0 0 80px rgb(230,230,230);
+	box-shadow: 0 0 80px rgb(230,230,230);
 	
 }
 a {
@@ -102,6 +106,9 @@ article {
 p {
 	margin: 10px 0;
 	font-weight: lighter;
+	background-color: rgb(245,245,245);
+	border-radius: 5px;
+	padding: 5px;
 
 }
 article p:first-of-type {
@@ -110,8 +117,9 @@ article p:first-of-type {
 
 video {
 	margin-top: 20px;
+	width: 100%;
 }
-section:last-of-type>aside>p {
+section:last-of-type>aside>p,section:first-of-type>article:last-of-type>p {
   	-webkit-column-count: 2;  -webkit-column-gap: 15px;
        -moz-column-count: 2;     -moz-column-gap: 15px;
     		column-count: 2;          column-gap: 15px;
@@ -141,11 +149,11 @@ fieldset {
 	border: none;
 	padding: 20px;
 	color: #fff;
-	-webkit-transform: scale(0.99);
-	-moz-transform: scale(0.99);
-	-ms-transform: scale(0.99);
-  	-o-transform: scale(0.99);
-  	transform: scale(0.99);
+	-webkit-transform: scale(0.98);
+	-moz-transform: scale(0.98);
+	-ms-transform: scale(0.98);
+  	-o-transform: scale(0.98);
+  	transform: scale(0.98);
 	-webkit-transition: all 80ms linear;
 	-moz-transition:    all 80ms linear;
 	-ms-transition:     all 80ms linear;
@@ -165,7 +173,7 @@ fieldset:hover {
 	-ms-transform: scale(1);
   	-o-transform: scale(1);
   	transform: scale(1);
-	background-color: rgb(80,80,80);
+	background-color: rgb(90,90,90);
 }
 
 fieldset:first-child label,fieldset div label {
